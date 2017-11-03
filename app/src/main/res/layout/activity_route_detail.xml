@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/common_route_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="@dimen/d_smaller"
+        android:scrollbars="none">
+
+        <com.wallmarttest.customview.TimelineLayout
+            android:id="@+id/timeline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            app:line_color="@android:color/black"
+            app:line_margin_left="@dimen/line_margin_left"
+            app:line_margin_top="@dimen/line_margin_top"
+            app:line_stroke_width="@dimen/d_smaller" />
+    </ScrollView>
+
+
+</RelativeLayout>

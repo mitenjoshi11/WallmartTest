@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/timeline_top_bottom_padding"
+    android:paddingLeft="@dimen/timeline_left_padding"
+    android:paddingRight="@dimen/timeline_right_padding"
+    android:paddingTop="@dimen/timeline_top_bottom_padding">
+
+    <TextView
+        android:id="@+id/tvStopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_normal" />
+
+
+</RelativeLayout>

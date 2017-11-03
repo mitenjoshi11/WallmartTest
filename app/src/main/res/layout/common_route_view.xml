@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="@dimen/route_image_width"
+        android:layout_height="@dimen/route_image_height"
+        android:layout_margin="@dimen/d_small"
+        android:background="@color/movie_thumb_bg"
+        android:transitionName="@string/thumb_transition_name"
+        fresco:placeholderImageScaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivAccessible"
+        android:layout_toRightOf="@id/ivThumbnail"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/d_small"
+        android:paddingRight="@dimen/d_small"
+        android:paddingTop="@dimen/d_small"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_large" />
+
+    <ImageView
+        android:id="@+id/ivAccessible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/d_small"
+        android:src="@drawable/accessibility"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvRouteDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_toLeftOf="@+id/ivAccessible"
+        android:layout_toRightOf="@id/ivThumbnail"
+        android:paddingBottom="@dimen/d_smaller"
+        android:paddingLeft="@dimen/d_small"
+        android:paddingRight="@dimen/d_small"
+        android:paddingTop="@dimen/d_smaller"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_normal"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

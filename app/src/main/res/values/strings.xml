@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Route</string>
+    <string name="no_result_found"><![CDATA[<  There is  no result to show >]]></string>
+    <string name="check_network_connection">Unable to connect to application, Please check your network connection.</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="thumb_transition_name">thumbImage</string>
+    <string name="no_route_detail">No route detail</string>
+</resources>
